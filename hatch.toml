@@ -1,0 +1,13 @@
+[version]
+path = "src/repro/__about__.py"
+
+[build.targets.wheel.hooks.mypyc]
+dependencies = ["hatch-mypyc"]
+exclude = []
+require-runtime-dependencies = true
+mypy-args = [
+  "--ignore-missing-imports",
+]
+
+[build.targets.sdist]
+include = ["src/repro"]

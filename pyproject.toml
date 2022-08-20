@@ -1,0 +1,19 @@
+# most of this is just here for hatch
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mypyc-bug"
+description = ''
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+keywords = []
+authors = []
+classifiers = []
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
